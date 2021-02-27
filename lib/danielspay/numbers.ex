@@ -1,5 +1,5 @@
 defmodule Danielspay.Numbers do
-  def sum_from_file(filename) do
+  def sum_from_file(filename, _conn) do
     # Pipe Operator, composto por um Pipe | e um sinal de maior que >
     # Ele pega a primeira expressão antes dele, nesse caso o "#{filename}.csv"
     # e passa de forma impicita como primeiro argumento para as funções seguintes
@@ -17,5 +17,6 @@ defmodule Danielspay.Numbers do
 
     {:ok, %{result: result}}
   end
-  defp handle_file({:error, _reason}), do: {:error, "Invalid File"}
+
+  defp handle_file({:error, _reason}), do: {:error, %{message: "Invalid File"}}
 end

@@ -8,7 +8,7 @@ defmodule DanielspayWeb.Router do
   scope "/api", DanielspayWeb do
     pipe_through :api
 
-    get "/", WelcomeController, :index
+    get "/:filename", WelcomeController, :index
   end
 
   # Enables LiveDashboard only for development
