@@ -5,7 +5,7 @@ defmodule DanielspayWeb.WelcomeController do
 
   def index(conn, %{"filename" => filename}) do
     filename
-    |> Numbers.sum_from_file(conn)
+    |> Numbers.sum_from_file()
     |> handle_response(conn)
   end
 
