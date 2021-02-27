@@ -51,18 +51,18 @@ Meu primeiro projeto em Elixir!!
 
 ### Utils
 
-- Run tests
+#### Run tests
 ```bash
 mix test
 ```
 
-- Download deps
+#### Download deps
 
 ```bash
 mix deps.get 
 ```
 
-- Start a new  `Elixir` project with `Phoenix`
+#### Start a new  `Elixir` project with `Phoenix`
 
 ```bash
 mix phx.new project_name --no-webpack --no-html
