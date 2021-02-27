@@ -1,7 +1,8 @@
 defmodule Danielspay.Numbers do
   def sum_from_file(filename) do
-    file = File.read("#{filename}.csv")
-    handle_file(file)
+    "#{filename}.csv"
+    |>File.read()
+    |>handle_file()
   end
 
   defp handle_file({:ok, file}), do: file
