@@ -12,7 +12,11 @@ defmodule Danielspay.Numbers do
     result =
       result
     |> String.split(",")
-    |> Enum.map(fn number -> String.to_integer(number) end )
+    # |> Enum.map(fn number -> String.to_integer(number) end )
+    #  Stream, Lazy Operator.
+    #  Se nossa Lista tivesse 100 valores, o Enum, passaria por cada uma convertendo em Inteiro
+    #  já o Stream, faz isso tudo de uma vez, de uma forma mais performática e inteligente, poupando processos.
+    |> Stream.map(fn number -> String.to_integer(number) end )
     |> Enum.sum()
 
     {:ok, %{result: result}}
