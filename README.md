@@ -4,7 +4,7 @@ Meu primeiro projeto em Elixir!!
 
 # Conceitos
 
-- Tupla
+- Tuple
 ```elixir
   {:test, value}
 ```
