@@ -1,11 +1,9 @@
 # Danielspay
 
+Meu primeiro projeto em Elixir!!
 
-## Docker
+# Conceitos
 
-```bash
-docker run --name nlw_4_elixir -e POSTGRES_PASSWORD=postgres -p 5432:5432 -d postgres
-```
 - Tupla
 ```elixir
   {:test, value}
@@ -27,3 +25,20 @@ docker run --name nlw_4_elixir -e POSTGRES_PASSWORD=postgres -p 5432:5432 -d pos
 |> now_do_other_thing_with_the_returned_value_obove()
 ```
 > Ele passa de forma implicita a expressão `"value"` como primeiro argumento para as funções seguintes
+
+# Modules
+
+- Enum
+  > Modulo para fazer operações em `numbers`.
+- Stream
+  > Irmão preguiçoso do `Enum` (lazy module).
+- String
+  > Modulo para fazer determinadas operações em `strings`.
+
+
+### Utils
+#### Docker
+
+```bash
+docker run --name nlw_4_elixir -e POSTGRES_PASSWORD=postgres -p 5432:5432 -d postgres
+```
