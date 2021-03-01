@@ -86,6 +86,11 @@ mix phx.new project_name --no-webpack --no-html
 mix ecto.create
 ```
 
+### Create migration with `Ecto`
+```bash
+mix ecto.gen.migration table_name
+```
+
 #### Run Server
 
 ```elixir
