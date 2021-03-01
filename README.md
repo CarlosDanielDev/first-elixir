@@ -91,6 +91,11 @@ mix ecto.create
 mix ecto.gen.migration table_name
 ```
 
+### Run migrations
+```bash
+mix ecto.migrate 
+```
+
 #### Run Server
 
 ```elixir
