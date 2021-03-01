@@ -12,6 +12,8 @@ Meu primeiro projeto em Elixir!!
   ```elixir
     %{key: "value", second_key: "second_value"}
   ```
+- Struct
+> `Map` com um nome
 
 - List
   ```elixir
