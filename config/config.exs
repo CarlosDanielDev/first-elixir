@@ -18,6 +18,10 @@ config :danielspay, DanielspayWeb.Endpoint,
   pubsub_server: Danielspay.PubSub,
   live_view: [signing_salt: "x1LoAkXI"]
 
+config :danielspay, Danielspay.Repo,
+  migration_primary_key: [type: :binary_id],
+  migration_foreign_key: [type: :binary_id]
+
 # Configures Elixir's Logger
 config :logger, :console,
   format: "$time $metadata[$level] $message\n",

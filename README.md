@@ -96,6 +96,11 @@ mix ecto.gen.migration table_name
 mix ecto.migrate 
 ```
 
+### Drop a database
+```bash
+mix ecto.drop
+```
+
 #### Run Server
 
 ```elixir
