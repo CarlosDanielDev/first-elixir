@@ -80,6 +80,12 @@ mix deps.get
 mix phx.new project_name --no-webpack --no-html
 ```
 
+### Create database with `Ecto`
+
+```bash
+mix ecto.create
+```
+
 #### Run Server
 
 ```elixir
