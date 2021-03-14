@@ -53,6 +53,21 @@ Meu primeiro projeto em Elixir!!
 ### Controllers de Fallback
 Um controller genérico
 
+
+### With
+O with faz um pattern match, ele verifica uma determinada condição, 
+se passou ele executa a linha, se não ele devolve o erro pra quem chamou
+ex:
+```elixir
+def create(conn, params) do
+  with {:ok, %User{} = user} <- Danielspay.create_user(params) do
+    conn
+    |> put_status(:created)
+    |> render("create.json", user: user)
+  end
+end
+```
+
 ### Utils
 
 
