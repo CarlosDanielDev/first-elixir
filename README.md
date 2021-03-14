@@ -50,6 +50,9 @@ Meu primeiro projeto em Elixir!!
   > Modulo para fazer determinadas operações em `strings`.
 
 
+### Controllers de Fallback
+Um controller genérico
+
 ### Utils
 
 
